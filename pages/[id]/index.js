@@ -55,18 +55,4 @@ export async function getServerSideProps({ params }) {
   };
 }
 
-// export async function getStaticPaths() {
-//   const res = await axios(`http://localhost:3000/api/hero/`);
-//   const heroIds = res.data.hero.map((hero) => hero._id);
-
-//   return {
-//     paths: heroIds.map((id) => {
-//       return {
-//         params: { id },
-//       };
-//     }),
-//     fallback: false,
-//   };
-// }
-
 export default EachHero;
